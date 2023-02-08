@@ -8,6 +8,8 @@ namespace HEDAO
     public class ProcedurePreload : ProcedureBase
     {
         private bool m_PreloadEnd = false;
+        private const string DefaultFont = "mplus_hzk_12";
+        private const string UIPackageOath = "Assets/Game/Res/Fgui/CommonUI";
 
         protected override void OnEnter(ProcedureOwner procedureOwner)
         {
@@ -35,9 +37,9 @@ namespace HEDAO
         {
             //GameEntry.Cfg.InitTables();
 
-            UIConfig.defaultFont = "mplus_hzk_12";
-            UIPackage.AddPackage("Assets/GameMain/Res/Fgui/CommonUI");
-            //FGUI.CommonUI.CommonUIBinder.BindAll();
+            UIConfig.defaultFont = DefaultFont;
+            UIPackage.AddPackage(UIPackageOath);
+            FGUI.CommonUI.CommonUIBinder.BindAll();
 
             m_PreloadEnd = true;
             Log.Info("预加载结束。");
