@@ -8,7 +8,7 @@ namespace HEDAO
     {
         public static void LoadAsset(this ResourceComponent resourceComponent, string assetName, LoadAssetSuccessCallback onLoadSuccess)
         {
-            if (GameEntry.Resource.HasAsset(assetName) == HasAssetResult.NotExist)
+            if (resourceComponent.HasAsset(assetName) == HasAssetResult.NotExist)
             {
                 Log.Error("资源不存在！");
                 return;
@@ -19,7 +19,7 @@ namespace HEDAO
 
         public static void LoadAsset(this ResourceComponent resourceComponent, string assetName, Type type, LoadAssetSuccessCallback onLoadSuccess)
         {
-            if (GameEntry.Resource.HasAsset(assetName) == HasAssetResult.NotExist)
+            if (resourceComponent.HasAsset(assetName) == HasAssetResult.NotExist)
             {
                 Log.Error("资源不存在！");
                 return;

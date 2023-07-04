@@ -7,15 +7,12 @@ namespace HEDAO
 {
     public class ProcedurePreload : ProcedureBase
     {
-        private bool m_PreloadEnd = false;
         private const string DefaultFont = "mplus_hzk_12";
         private const string UIPackageOath = "Assets/Game/Res/Fgui/CommonUI";
 
         protected override void OnEnter(ProcedureOwner procedureOwner)
         {
             base.OnEnter(procedureOwner);
-
-            m_PreloadEnd = false;
 
             Log.Info("预加载开始。");
             Preload();
@@ -25,24 +22,20 @@ namespace HEDAO
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
 
-            if (!m_PreloadEnd)
+            if (GameEntry.Cfg.EndLoad)
             {
-                return;
+                Log.Info("预加载结束。");
+                ChangeState<ProcedureMain>(procedureOwner);
             }
-
-            ChangeState<ProcedureMain>(procedureOwner);
         }
 
         private void Preload()
         {
-            //GameEntry.Cfg.InitTables();
+            GameEntry.Cfg.LoadTables();
 
             UIConfig.defaultFont = DefaultFont;
             UIPackage.AddPackage(UIPackageOath);
             FGUI.CommonUI.CommonUIBinder.BindAll();
-
-            m_PreloadEnd = true;
-            Log.Info("预加载结束。");
         }
     }
 }
