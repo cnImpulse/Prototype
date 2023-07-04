@@ -8,14 +8,17 @@ using UnityEngine;
 
 public class LogJump
 {
+    private static string CustomLog = "GameFrameworkLog.cs";
     private static readonly Regex LogRegex = new Regex(@"\(at (.+)\:(\d+)\)\r?\n");
 
     [OnOpenAsset(0)]
     public static bool DoubleClickLog(int instanceId, int line)
     {
         var trackInfo = GetStackTrace();
-        // 不是在Log界面点击的！
         if (string.IsNullOrEmpty(trackInfo))
+            return false;
+
+        if (!trackInfo.Contains(CustomLog))
             return false;
 
         Match match = LogRegex.Match(trackInfo);
