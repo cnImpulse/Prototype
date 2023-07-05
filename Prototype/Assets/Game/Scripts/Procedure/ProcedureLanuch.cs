@@ -3,7 +3,7 @@ using GameFramework.Resource;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
-namespace HEDAO
+namespace ProtoType
 {
     public class ProcedureLanuch : ProcedureBase
     {

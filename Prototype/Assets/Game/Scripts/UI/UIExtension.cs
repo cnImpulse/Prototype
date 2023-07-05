@@ -2,23 +2,11 @@ using System;
 using System.Collections.Generic;
 using UnityGameFramework.Runtime;
 
-namespace HEDAO
+namespace ProtoType
 {
     public static class UIFromName
     {
-        public const string MenuForm = "MenuForm";
-        public const string SelectForm = "SelectForm";
-        public const string LoadGameForm = "LoadGame";
-        public const string MainForm = "MainForm";
-        public const string DiscipleForm = "DiscipleForm";
-        public const string PrepareForm = "PrepareForm";
-        public const string BattleForm = "BattleForm";
-        public const string ActionForm = "ActionForm";
-        public const string ReleaseSkillForm = "ReleaseSkillForm";
-        
-        public const string CommonTips = "CommonTips";
-        public const string BattleUnitInfo = "BattleUnitInfo";
-        public const string BattleStateEffect = "BattleStateEffect";
+
     }
 
     public static class UICfg

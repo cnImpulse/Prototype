@@ -2,7 +2,7 @@ using System;
 using GameFramework.Resource;
 using UnityGameFramework.Runtime;
 
-namespace HEDAO
+namespace ProtoType
 {
     public static class ResourceExtension
     {

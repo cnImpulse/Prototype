@@ -1,7 +1,7 @@
 using FairyGUI;
 using UnityGameFramework.Runtime;
 
-namespace HEDAO
+namespace ProtoType
 {
     public class FGUIForm<T> : UIFormLogic
         where T : GComponent

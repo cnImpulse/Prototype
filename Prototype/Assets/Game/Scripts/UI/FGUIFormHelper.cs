@@ -3,7 +3,7 @@ using UnityEngine;
 using FairyGUI;
 using UnityGameFramework.Runtime;
 
-namespace HEDAO
+namespace ProtoType
 {
     /// <summary>
     /// 默认界面辅助器。

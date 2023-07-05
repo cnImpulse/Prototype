@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace HEDAO
+namespace ProtoType
 {
     /// <summary>
     /// 游戏入口。

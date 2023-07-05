@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using GFGameEntry = UnityGameFramework.Runtime.GameEntry;
 
-namespace HEDAO
+namespace ProtoType
 {
     /// <summary>
     /// 游戏入口。

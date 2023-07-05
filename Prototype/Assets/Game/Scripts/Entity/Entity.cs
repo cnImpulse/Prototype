@@ -4,7 +4,7 @@ using UnityGameFramework.Runtime;
 using System;
 using System.Collections.Generic;
 
-namespace HEDAO
+namespace ProtoType
 {
     public abstract class Entity : EntityLogic
     {

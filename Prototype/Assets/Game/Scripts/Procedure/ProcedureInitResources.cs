@@ -2,7 +2,7 @@
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
-namespace HEDAO
+namespace ProtoType
 {
     public class ProcedureInitResources : ProcedureBase
     {

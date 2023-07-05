@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace HEDAO
+namespace ProtoType
 {
     public abstract class EntityData
     {

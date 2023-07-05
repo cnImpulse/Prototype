@@ -2,7 +2,7 @@
 using GameFramework.Event;
 using UnityGameFramework.Runtime;
 
-namespace HEDAO
+namespace ProtoType
 {
     public static class EventExtension
     {

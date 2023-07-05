@@ -5,10 +5,12 @@ using GameFramework.Resource;
 using UnityGameFramework.Runtime;
 using Bright.Serialization;
 
-namespace HEDAO
+namespace ProtoType
 {
     public class CfgComponent : GameFrameworkComponent
     {
+        public string Path = "Assets/Game/Res/Cfg/Bytes/";
+
         [NonSerialized]
         public bool EndLoad = false;
 
@@ -30,7 +32,7 @@ namespace HEDAO
 
             for (int i = 0; i < Cfg.Tables.Assets.Length; ++i)
             {
-                GameEntry.Resource.LoadAsset($"Assets/Game/Res/Cfg/Bytes/{Cfg.Tables.Assets[i]}.bytes", OnAssetLoadScuess);
+                GameEntry.Resource.LoadAsset($"{Path}{Cfg.Tables.Assets[i]}.bytes", OnAssetLoadScuess);
             }
         }
 

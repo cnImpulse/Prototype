@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace HEDAO
+namespace ProtoType
 {
     /// <summary>
     /// 游戏入口。

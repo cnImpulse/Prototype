@@ -1,7 +1,7 @@
 using GameFramework;
 using GameFramework.Event;
 
-namespace HEDAO
+namespace ProtoType
 {
     public class GameEventBase : GameEventArgs
     {

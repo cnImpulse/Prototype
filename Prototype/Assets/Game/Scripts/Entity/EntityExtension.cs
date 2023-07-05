@@ -4,7 +4,7 @@ using GameFramework;
 using GameFramework.Resource;
 using UnityGameFramework.Runtime;
 
-namespace HEDAO
+namespace ProtoType
 {
     public static class EntityExtension
     {
